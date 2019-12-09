@@ -67,7 +67,8 @@ br.clear {
 }
 
   @media screen and (min-width: 961px) and (max-width: 1880px) {
-
+    
+      
       .container {
           width: 1200px;
           color: #aaaaaa;
@@ -84,7 +85,8 @@ br.clear {
   }
 
   @media screen and (min-width: 961px) and (max-width: 1320px) {
-
+   
+      
       .container {
           width: 100%;
       }
@@ -98,10 +100,19 @@ br.clear {
       }
 
   }
+  @media screen and (max-width: 200px) {
+
+    .container {
+      background-color: grey;
+        width: 100%;
+    }
+
+}
 
   @media screen and (max-width: 736px) {
-
+    
       .container {
+        background-color: blue;
           width: 100%;
       }
 
@@ -351,7 +362,7 @@ br.clear {
           }
 
   @media screen and (min-width: 961px) and (max-width: 1880px) {
-
+    
       .row {
           display: flex;
           flex-wrap: wrap;
@@ -1627,7 +1638,7 @@ section, article {
   }
 
   .image.left {
-      float: left;
+      flex: auto;
       margin: 0 2em 2em 0;
   }
 
@@ -2412,8 +2423,11 @@ button,
 /* Mobile */
 
 @media screen and (max-width: 736px) {
-
+      #portfolio {
+      background-color: chartreuse;
+      }
   /* Basic */
+
 
       body, input, textarea, select {
           font-size: 14pt;
