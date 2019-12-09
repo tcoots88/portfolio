@@ -67,10 +67,11 @@ br.clear {
 }
 
   @media screen and (min-width: 961px) and (max-width: 1880px) {
-
+    
+      
       .container {
           width: 1200px;
-          color: #26363a;
+          color: #aaaaaa;
       }
 
   }
@@ -84,7 +85,8 @@ br.clear {
   }
 
   @media screen and (min-width: 961px) and (max-width: 1320px) {
-
+   
+      
       .container {
           width: 100%;
       }
@@ -98,10 +100,19 @@ br.clear {
       }
 
   }
+  @media screen and (max-width: 200px) {
+
+    .container {
+      background-color: grey;
+        width: 100%;
+    }
+
+}
 
   @media screen and (max-width: 736px) {
-
+    
       .container {
+        background-color: blue;
           width: 100%;
       }
 
@@ -351,7 +362,7 @@ br.clear {
           }
 
   @media screen and (min-width: 961px) and (max-width: 1880px) {
-
+    
       .row {
           display: flex;
           flex-wrap: wrap;
@@ -1627,7 +1638,7 @@ section, article {
   }
 
   .image.left {
-      float: left;
+      flex: auto;
       margin: 0 2em 2em 0;
   }
 
@@ -2059,7 +2070,7 @@ button,
       }
 
           #main > section.dark h2, #main > section.dark h3, #main > section.dark h4, #main > section.dark h5, #main > section.dark h6 {
-              color: inherit;
+              color: black;
           }
 
           #main > section.dark strong {
@@ -2082,10 +2093,11 @@ button,
           background-position: center center;
       }
 
-      #main > section.one {
-          background-color: #81918E;
-          background-image: url("../../images/banner.jpg");
-      }
+      /* #main > section.one {
+          /* background-color: #81918E; */
+          /* background-image: url("https://media1.giphy.com/media/8mdcLngfulQCA/giphy.gif?cid=790b76119e481ddddae3649ca43d179eb549b3e8d52bbc12&rid=giphy.gif"); */
+        
+      /* } */ 
 
       #main > section.two {
           background-color: #f5fafa;
@@ -2254,14 +2266,14 @@ button,
   /* Header */
 
       #header {
-          -moz-backface-visibility: hidden;
+          /* -moz-backface-visibility: hidden;
           -webkit-backface-visibility: hidden;
           -ms-backface-visibility: hidden;
           backface-visibility: hidden;
           -moz-transform: translateX(-275px);
           -webkit-transform: translateX(-275px);
           -ms-transform: translateX(-275px);
-          transform: translateX(-275px);
+          transform: translateX(-275px); */
           -moz-transition: -moz-transform 0.5s ease;
           -webkit-transition: -webkit-transform 0.5s ease;
           -ms-transition: -ms-transform 0.5s ease;
@@ -2411,8 +2423,11 @@ button,
 /* Mobile */
 
 @media screen and (max-width: 736px) {
-
+      #portfolio {
+      background-color: chartreuse;
+      }
   /* Basic */
+
 
       body, input, textarea, select {
           font-size: 14pt;
@@ -2463,4 +2478,15 @@ button,
               margin-top: 0;
           }
 
+}
+#video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translate(-50%, -50%);
 }
